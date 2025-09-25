@@ -1,0 +1,14 @@
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid red 2px;
+  width: 500px;
+  height: 500px;  
+}
+
+.gridBox {
+  flex: 0 0 calc(100% / 16); /* each box is 1/16 of the row */
+  height: calc(500px / 16);  /* keep square ratio */
+  border: 1px solid black;
+  box-sizing: border-box;
+}
