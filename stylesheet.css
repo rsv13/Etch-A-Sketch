@@ -1,14 +1,31 @@
-#container {
+/* Basic body styling */
+body {
   display: flex;
-  flex-wrap: wrap;
-  border: solid red 2px;
-  width: 500px;
-  height: 500px;  
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 20px;
 }
 
+/* Resize button styling */
+#resizeBtn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Container styling using flexbox */
+#container {
+  display: flex;
+  flex-wrap: wrap;       /* Allows wrapping to next row */
+  width: 960px;          /* Total width of the canvas */
+  height: 960px;         /* Total height of the canvas */
+  border: 2px solid red;
+}
+
+/* Individual grid squares */
 .gridBox {
-  flex: 0 0 calc(100% / 16); /* each box is 1/16 of the row */
-  height: calc(500px / 16);  /* keep square ratio */
-  border: 1px solid black;
-  box-sizing: border-box;
+  /* border: 1px solid black;  Optional grid lines */
+  box-sizing: border-box;   /* Ensures borders don't affect sizing */
 }
