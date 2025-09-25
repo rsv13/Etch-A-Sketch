@@ -15,17 +15,25 @@ body {
   cursor: pointer;
 }
 
+/* Mode selector styling */
+#modeSelect {
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 /* Container styling using flexbox */
 #container {
   display: flex;
-  flex-wrap: wrap;       /* Allows wrapping to next row */
-  width: 960px;          /* Total width of the canvas */
-  height: 960px;         /* Total height of the canvas */
+  flex-wrap: wrap;
+  width: 960px;
+  height: 960px;
   border: 2px solid red;
 }
 
 /* Individual grid squares */
 .gridBox {
-  /* border: 1px solid black;  Optional grid lines */
-  box-sizing: border-box;   /* Ensures borders don't affect sizing */
+  border: 1px solid black;
+  box-sizing: border-box;
 }
